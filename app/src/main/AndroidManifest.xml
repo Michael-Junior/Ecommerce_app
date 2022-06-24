@@ -13,9 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ecommerce_app"
         tools:targetApi="31">
+
         <activity
             android:name=".activity.SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +26,15 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"></activity>
+        <activity
+            android:name=".autenticacao.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Ecommerce_app">
         </activity>
+        <activity
+            android:name=".autenticacao.RecuperaContaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
